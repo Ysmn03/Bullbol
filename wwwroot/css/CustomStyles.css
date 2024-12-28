@@ -1,0 +1,10 @@
+﻿a.nav-item.nav-link.active {
+    border-radius: 50px !important; /* Ensures the active link has the rounded-pill style */
+    border-color:#08436A ; /* Add background color if desired */
+    background-color:none;
+    color: white; /* Optional: Change text color */
+    padding: 10px 20px; /* Optional: Adjust padding */
+}
+.footer{
+    background:none;
+}

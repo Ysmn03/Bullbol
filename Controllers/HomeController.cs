@@ -8,5 +8,13 @@ namespace Bullbol.Controllers
         {
             return View();
         }
+        public IActionResult UpcomingEvents()
+        {
+            return View();
+        }
+        public IActionResult Archive()
+        {
+            return View();
+        }
     }
 }
