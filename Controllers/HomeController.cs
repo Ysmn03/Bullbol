@@ -16,5 +16,9 @@ namespace Bullbol.Controllers
         {
             return View();
         }
+        public IActionResult FAQ()
+        {
+            return View();
+        }
     }
 }

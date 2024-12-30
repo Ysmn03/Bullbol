@@ -1,0 +1,23 @@
+﻿body {
+    background-color: #E9EDF0 !important;
+}
+.logo {
+    width: 88px;
+    height: 87px;
+}
+.navcontainer{
+    background-color:white;
+    font-family: 'Inter Bold';
+    color:#808080;
+}
+a.nav-item.nav-link.active {
+    border: 3px solid #08436A;
+    border-radius: 22px;
+    color: #08436A;
+}
+a:hover {
+    color: #08436A !important;
+}
+.hovercolor:hover{
+    color:white !important;
+}
