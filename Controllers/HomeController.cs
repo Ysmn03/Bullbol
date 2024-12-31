@@ -20,5 +20,9 @@ namespace Bullbol.Controllers
         {
             return View();
         }
+        public IActionResult SingleUpcoming()
+        {
+            return View();
+        }
     }
 }

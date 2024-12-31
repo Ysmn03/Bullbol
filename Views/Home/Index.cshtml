@@ -1,1 +1,525 @@
-﻿
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="row-cols-1">
+    <div class="col-xl-9 mx-auto">
+        <div id="carouselExampleCaptions" class="carousel slide mt-3" data-slide='next' data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style=""></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="~/img/slider 1.jpg" class="d-block w-100 sliderimg" alt="slider1">
+                    <div class="shadow-overlay"></div>
+                    <div class="carousel-caption d-none-xl d-md-block">
+                        <div class="me-2">
+                            Let's Save
+                        </div>
+                        <div class="carousel-title">
+                            Tech 3arabi
+                        </div>
+                        <div>
+                            !
+                        </div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block" style="top:225px;">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row text-center">
+                                            <div class="col-3 position-relative" style="color:white;">
+                                                <span class="dot top-left"></span>
+                                                <span class="dot top-right"></span>
+                                                <span class="dot bottom-left"></span>
+                                                <span class="dot bottom-right"></span>
+                                                <h3 id="days" class="p-3 countdown">00</h3>
+                                                <p style="font-size:20px;">Days</p>
+                                            </div>
+                                            <div class="col-3 position-relative" style="color:white;">
+                                                <span class="dot top-left"></span>
+                                                <span class="dot top-right"></span>
+                                                <span class="dot bottom-left"></span>
+                                                <span class="dot bottom-right"></span>
+                                                <h3 id="hours" class="p-3 countdown">00</h3>
+                                                <p style="font-size:20px;">Hours</p>
+                                            </div>
+                                            <div class="col-3 position-relative" style="color:white;">
+                                                <span class="dot top-left"></span>
+                                                <span class="dot top-right"></span>
+                                                <span class="dot bottom-left"></span>
+                                                <span class="dot bottom-right"></span>
+                                                <h3 id="minutes" class="p-3 countdown">00</h3>
+                                                <p style="font-size:20px;">Minutes</p>
+                                            </div>
+                                            <div class="col-3 position-relative" style="color:white;">
+                                                <span class="dot top-left"></span>
+                                                <span class="dot top-right"></span>
+                                                <span class="dot bottom-left"></span>
+                                                <span class="dot bottom-right"></span>
+                                                <h3 id="seconds" class="p-3 countdown">00</h3>
+                                                <p style="font-size:20px;">Seconds</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="~/img/slider 2.jpg" class="d-block w-100 sliderimg" alt="slider1">
+                    <div class="shadow-overlay"></div>
+                    <div class="carousel-caption d-none-xl d-md-block">
+                        <div class="me-2">
+                            Let's Save
+                        </div>
+                        <div class="carousel-title">
+                            KasitTeam
+                        </div>
+                        <div>
+                            !
+                        </div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block" style="top:225px;">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row text-center">
+                                            <div class="col-3 position-relative" style="color:white;">
+                                                <span class="dot top-left"></span>
+                                                <span class="dot top-right"></span>
+                                                <span class="dot bottom-left"></span>
+                                                <span class="dot bottom-right"></span>
+                                                <h3 id="days" class="p-3 countdown">00</h3>
+                                                <p style="font-size:20px;">Days</p>
+                                            </div>
+                                            <div class="col-3 position-relative" style="color:white;">
+                                                <span class="dot top-left"></span>
+                                                <span class="dot top-right"></span>
+                                                <span class="dot bottom-left"></span>
+                                                <span class="dot bottom-right"></span>
+                                                <h3 id="hours" class="p-3 countdown">00</h3>
+                                                <p style="font-size:20px;">Hours</p>
+                                            </div>
+                                            <div class="col-3 position-relative" style="color:white;">
+                                                <span class="dot top-left"></span>
+                                                <span class="dot top-right"></span>
+                                                <span class="dot bottom-left"></span>
+                                                <span class="dot bottom-right"></span>
+                                                <h3 id="minutes" class="p-3 countdown">00</h3>
+                                                <p style="font-size:20px;">Minutes</p>
+                                            </div>
+                                            <div class="col-3 position-relative" style="color:white;">
+                                                <span class="dot top-left"></span>
+                                                <span class="dot top-right"></span>
+                                                <span class="dot bottom-left"></span>
+                                                <span class="dot bottom-right"></span>
+                                                <h3 id="seconds" class="p-3 countdown">00</h3>
+                                                <p style="font-size:20px;">Seconds</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="~/img/slider 3.jpg" class="d-block w-100 sliderimg" alt="slider1">
+                    <div class="shadow-overlay"></div>
+                    <div class="carousel-caption d-none-xl d-md-block">
+                        <div class="me-2">
+                            Let's Save
+                        </div>
+                        <div class="carousel-title">
+                            ACM
+                        </div>
+                        <div>
+                            !
+                        </div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block" style="top:225px;">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row text-center">
+                                            <div class="col-3 position-relative" style="color:white;">
+                                                <span class="dot top-left"></span>
+                                                <span class="dot top-right"></span>
+                                                <span class="dot bottom-left"></span>
+                                                <span class="dot bottom-right"></span>
+                                                <h3 id="days" class="p-3 countdown">00</h3>
+                                                <p style="font-size:20px;">Days</p>
+                                            </div>
+                                            <div class="col-3 position-relative" style="color:white;">
+                                                <span class="dot top-left"></span>
+                                                <span class="dot top-right"></span>
+                                                <span class="dot bottom-left"></span>
+                                                <span class="dot bottom-right"></span>
+                                                <h3 id="hours" class="p-3 countdown">00</h3>
+                                                <p style="font-size:20px;">Hours</p>
+                                            </div>
+                                            <div class="col-3 position-relative" style="color:white;">
+                                                <span class="dot top-left"></span>
+                                                <span class="dot top-right"></span>
+                                                <span class="dot bottom-left"></span>
+                                                <span class="dot bottom-right"></span>
+                                                <h3 id="minutes" class="p-3 countdown">00</h3>
+                                                <p style="font-size:20px;">Minutes</p>
+                                            </div>
+                                            <div class="col-3 position-relative" style="color:white;">
+                                                <span class="dot top-left"></span>
+                                                <span class="dot top-right"></span>
+                                                <span class="dot bottom-left"></span>
+                                                <span class="dot bottom-right"></span>
+                                                <h3 id="seconds" class="p-3 countdown">00</h3>
+                                                <p style="font-size:20px;">Seconds</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<div class="container text-center" style="margin-top:6rem;">
+    <div class="row">
+        <div class="col-md-5" style="font-family:Inter Bold;font-size: 50px;color: #08436A;">
+            Upcoming Events
+        </div>
+        <div class="col-md-2 ms-auto my-auto">
+            <a href="/Home/UpcomingEvents" style="font-family:Inter Regular;font-size: 20px;color:#282828;text-decoration:none;">Explore More</a>
+        </div>
+    </div>
+</div>
+<div class="card-group py-4">
+    <div class="card mx-4 me-3 shadow upcomingbody" style="margin-left: 10rem !important;">
+        <img src="~/img/card1.png" class="card-img-top" alt="card1img">
+        <div class="card-body" style="font-family:Inter Bold;">
+            <div class="card-title lh-1" style="font-size:16px;">Dive into the world of Database</div>
+            <div class="card-text my-2" style="color:#B7B0B0;">Hosted By: Linux Society</div>
+            <div class="card-text my-2"><i class="fa-light fa-calendar me-1"></i>SUN, Nov 10  1:00-3:00 PM</div>
+            <div class="card-text my-2">Number of Register<i class="fa-solid fa-infinity ms-1"></i></div>
+            <div class="card-text position-absolute" style="color:#A20B0B;bottom:45px;"><i class="fa-regular fa-tickets me-1"></i>Unavailable</div>
+            <button  type="button" class="btn card-link rounded-pill position-absolute px-3 py-1 learnmore">
+                <a href="/Home/SingleUpcoming" style="color:inherit;text-decoration:none;">Learn More</a>
+            </button>
+        </div>
+    </div>
+    <div class="card mx-3 shadow position-relative upcomingbody">
+        <img src="~/img/card2.png" class="card-img-top" alt="card1img">
+        <div class="card-body" style="font-family:Inter Bold;">
+            <div class="card-title lh-1" style="font-size:16px;">Start @@JU</div>
+            <div class="card-text" style="color:#B7B0B0;">Hosted by: UJIEC</div>
+            <div class="card-text my-2"><i class="fa-light fa-calendar me-1"></i>Tues, Nov 19  11:30-12:30 PM</div>
+            <div class="card-text my-2">Number of Register<i class="fa-solid fa-infinity ms-1"></i></div>
+            <div class="card-text position-absolute" style="color:#29A20B;bottom:45px;"><i class="fa-regular fa-tickets me-1"></i>Available</div>
+            <button type="button" class="btn card-link rounded-pill px-3 py-1 position-absolute learnmore">
+                Learn More
+            </button>
+        </div>
+    </div>
+    <div class="card mx-3 shadow upcomingbody">
+        <img src="~/img/card3.png" class="card-img-top" alt="card1img">
+        <div class="card-body" style="font-family:Inter Bold;">
+            <div class="card-title lh-1" style="font-size:16px; ">What is the impact of the Metaverse on entrepreneurship?</div>
+            <div class="card-text" style="color:#B7B0B0;">Hosted By: iTeam</div>
+            <div class="card-text my-2"><i class="fa-light fa-calendar me-1"></i>Tues, Nov 19  12:30-2:30 PM</div>
+            <div class="card-text my-2">Number of Register<i class="fa-solid fa-infinity ms-1"></i></div>
+            <div class="card-text position-absolute" style="color:#29A20B;bottom:45px;"><i class="fa-regular fa-tickets me-1"></i>Available</div>
+            <button type="button" class="btn card-link rounded-pill px-3 py-1 position-absolute learnmore">
+                Learn More
+            </button>
+        </div>
+    </div>
+    <div class="card mx-4 ms-3 shadow upcomingbody" style="margin-right: 10rem !important;">
+        <img src="~/img/card4.png" class="card-img-top" alt="card1img">
+        <div class="card-body" style="font-family:Inter Bold;">
+            <div class="card-title lh-1" style="font-size:16px;">Dive into the world of Database</div>
+            <div class="card-text" style="color:#B7B0B0;">Hosted By: Linux Society</div>
+            <div class="card-text my-2"><i class="fa-light fa-calendar me-1"></i>SUN, Nov 10  1:00-3:00 PM</div>
+            <div class="card-text my-2">Number of Register<i class="fa-solid fa-infinity ms-1"></i></div>
+            <div class="card-text position-absolute" style="color:#A20B0B;bottom:45px;"><i class="fa-regular fa-tickets me-1"></i>Unavailable</div>
+            <button type="button" class="btn card-link rounded-pill px-3 py-1 position-absolute learnmore">
+                Learn More
+            </button>
+        </div>
+    </div>
+</div>
+<div class="card-group py-4">
+    <div class="card mx-4 me-3 shadow upcomingbody" style="margin-left: 10rem !important;">
+        <img src="~/img/card5.png" class="card-img-top" alt="card1img">
+        <div class="card-body" style="font-family:Inter Bold;">
+            <div class="card-title lh-1" style="font-size:16px;">After Mid</div>
+            <div class="card-text my-2" style="color:#B7B0B0;">Hosted By: Kasit Team</div>
+            <div class="card-text my-2"><i class="fa-light fa-calendar me-1"></i>SUN, Dec 22  11:30-1:30 PM</div>
+            <div class="card-text my-2">Number of Register<i class="fa-solid fa-infinity ms-1"></i></div>
+            <div class="card-text position-absolute" style="color:#29A20B;bottom:45px;"><i class="fa-regular fa-tickets me-1"></i>Available</div>
+            <button type="button" class="btn card-link rounded-pill position-absolute px-3 py-1 learnmore" style="">
+                Learn More
+            </button>
+        </div>
+    </div>
+    <div class="card mx-3 shadow position-relative upcomingbody">
+        <img src="~/img/card6.png" class="card-img-top" alt="card1img">
+        <div class="card-body" style="font-family:Inter Bold;">
+            <div class="card-title lh-1" style="font-size:16px;">ProgressSoft</div>
+            <div class="card-text" style="color:#B7B0B0;">Hosted by: KASIT</div>
+            <div class="card-text my-2"><i class="fa-light fa-calendar me-1"></i>TUE, Dec 24  12:00-1:30 PM</div>
+            <div class="card-text my-2">Number of Register<i class="fa-solid fa-infinity ms-1"></i></div>
+            <div class="card-text position-absolute" style="color:#29A20B;bottom:45px;"><i class="fa-regular fa-tickets me-1"></i>Available</div>
+            <button type="button" class="btn card-link rounded-pill px-3 py-1 position-absolute learnmore">
+                Learn More
+            </button>
+        </div>
+    </div>
+    <div class="card mx-3 shadow upcomingbody">
+        <img src="~/img/card7.png" class="card-img-top" alt="card1img">
+        <div class="card-body" style="font-family:Inter Bold;">
+            <div class="card-title lh-1" style="font-size:16px; ">Problem -> Solved</div>
+            <div class="card-text" style="color:#B7B0B0;">Hosted By: ACM JU</div>
+            <div class="card-text my-2"><i class="fa-light fa-calendar me-1"></i>THU, Dec 26  1:00 PM</div>
+            <div class="card-text my-2">Number of Register<i class="fa-solid fa-infinity ms-1"></i></div>
+            <div class="card-text position-absolute" style="color:#29A20B;bottom:45px;"><i class="fa-regular fa-tickets me-1"></i>Available</div>
+            <button type="button" class="btn card-link rounded-pill px-3 py-1 position-absolute learnmore">
+                Learn More
+            </button>
+        </div>
+    </div>
+    <div class="card mx-4 ms-3 shadow upcomingbody" style="margin-right: 10rem !important;">
+        <img src="~/img/card8.png" class="card-img-top" alt="card1img">
+        <div class="card-body" style="font-family:Inter Bold;">
+            <div class="card-title lh-1" style="font-size:16px;">Figma Mastery Bootcamp</div>
+            <div class="card-text" style="color:#B7B0B0;">Hosted By: IEEE CS JU</div>
+            <div class="card-text my-2"><i class="fa-light fa-calendar me-1"></i>THU, Dec 26  1:00 PM</div>
+            <div class="card-text my-2">Number of Register<i class="fa-solid fa-infinity ms-1"></i></div>
+            <div class="card-text position-absolute" style="color:#A20B0B;bottom:45px;"><i class="fa-regular fa-tickets me-1"></i>Unavailable</div>
+            <button type="button" class="btn card-link rounded-pill px-3 py-1 position-absolute learnmore">
+                Learn More
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center" style="font-family: Inter Bold;font-size: 50px;color: #08436A;margin-top:10rem;">
+    We've Reached
+</div>
+<div class="container text-center mt-1" style="font-family: Inter Regular;font-size: 27px;color: #08436A;">
+    More Than +318 Events Successfully
+</div>
+<div class="container text-center mt-5">
+    <div class="row row-cols-3" style="color:#08436A;">
+        <div class="col">
+            <div style="font-size:80px;">
+                <i class="fa-light fa-calendar-star"></i>
+            </div>
+        </div>
+        <div class="col">
+            <div style="font-size:80px;">
+                <i class="fa-light fa-users"></i>
+            </div>
+        </div>
+        <div class="col">
+            <div style="font-size:80px;">
+                <i class="fa-light fa-calendar-check"></i>
+            </div>
+        </div>
+        <div class="col">
+            <div id="counter1" style="font-family:Inter Bold;font-size:35px;">
+            </div>
+        </div>
+        <div class="col">
+            <div id="counter2" style="font-family:Inter Bold;font-size:35px;">
+            </div>
+        </div>
+        <div class="col">
+            <div id="counter3" style="font-family:Inter Bold;font-size:35px;">
+            </div>
+        </div>
+        <div class="col">
+            <div style="font-family:Inter Regular;font-size:18px;">
+                Events Will Be Held
+            </div>
+        </div>
+        <div class="col">
+            <div style="font-family:Inter Regular;font-size:18px;">
+                Users Visited The Site
+            </div>
+        </div>
+        <div class="col">
+            <div style="font-family:Inter Regular;font-size:18px;">
+                Successfully Archived Events
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center" style="margin-top:10rem;">
+    <div class="row">
+        <div class="col-md-5" style="font-family:Inter Bold;font-size: 50px;color: #08436A;">
+            Finished Events
+        </div>
+        <div class="col-md-2 ms-auto my-auto">
+            <a href="/Home/Archive" style="font-family:Inter Regular;font-size: 20px;color:#282828;text-decoration:none;">See all events</a>
+        </div>
+    </div>
+</div>
+<div class="card-group py-4 mb-5">
+    <div class="card mx-4 me-3 shadow finishedbody" style="margin-left: 10rem !important;">
+        <img src="~/img/fcard1.png" class="card-img-top" alt="card1img">
+        <div class="card-body" style="font-family:Inter Bold;">
+            <div class="card-title lh-1" style="font-size:16px;">Problem Solving Training</div>
+            <div class="card-text my-2" style="color:#B7B0B0;">Hosted By: ACM JU</div>
+            <div class="card-text my-2"><i class="fa-light fa-calendar me-1"></i>Thurs, Oct 3</div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span> 5
+            <button type="button" class="btn card-link rounded-pill position-absolute px-3 py-1 learnmore" style="">
+                Learn More
+            </button>
+        </div>
+    </div>
+    <div class="card mx-3 shadow finishedbody">
+        <img src="~/img/fcard2.png" class="card-img-top" alt="card1img">
+        <div class="card-body" style="font-family:Inter Bold;">
+            <div class="card-title lh-1" style="font-size:16px;">Welcoming Newbies</div>
+            <div class="card-text" style="color:#B7B0B0;">Hosted by: KASIT</div>
+            <div class="card-text my-2"><i class="fa-light fa-calendar me-1"></i>Tues, Oct 22</div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span> 2.3
+            <button type="button" class="btn card-link rounded-pill px-3 py-1 position-absolute learnmore">
+                Learn More
+            </button>
+        </div>
+    </div>
+    <div class="card mx-3 shadow finishedbody">
+        <img src="~/img/fcard3.png" class="card-img-top" alt="card1img">
+        <div class="card-body" style="font-family:Inter Bold;">
+            <div class="card-title lh-1" style="font-size:16px; ">Hackathon Results</div>
+            <div class="card-text" style="color:#B7B0B0;">Hosted By: UJIEC</div>
+            <div class="card-text my-2"><i class="fa-light fa-calendar me-1"></i>Tues, Nov 10</div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span> 4.0
+            <button type="button" class="btn card-link rounded-pill px-3 py-1 position-absolute learnmore">
+                Learn More
+            </button>
+        </div>
+    </div>
+    <div class="card mx-4 ms-3 shadow finishedbody" style="margin-right: 10rem !important;">
+        <img src="~/img/fcard4.png" class="card-img-top" alt="card1img">
+        <div class="card-body" style="font-family:Inter Bold;">
+            <div class="card-title lh-1" style="font-size:16px;">Play It Right</div>
+            <div class="card-text" style="color:#B7B0B0;">Hosted By: Ahl Alhemmah</div>
+            <div class="card-text my-2"><i class="fa-light fa-calendar me-1"></i>Mon, Nov 18</div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span> 3.7
+            <button type="button" class="btn card-link rounded-pill px-3 py-1 position-absolute learnmore">
+                Learn More
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+        // Set the date we're counting down to (1 month from now)
+    const countDownDate = new Date().getTime() + (30 * 24 * 60 * 60 * 1000);
+
+    // Update the countdown every 1 second
+    const x = setInterval(function() {
+      // Get today's date and time
+      const now = new Date().getTime();
+
+      // Find the distance between now and the countdown date
+      const distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result
+      document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+      document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+      document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+      document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+
+      // If the countdown is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
+      }
+    }, 1000);
+</script>
+<script>
+        (function (d) {
+      "use strict";
+      const myElement = d.getElementById("counter1");
+      d.body.classList.add("startBG");
+      var counter = 0;
+      var countdown = setInterval(function () {
+        counter++;
+        myElement.textContent = `+${counter}`;
+        if (counter == 7) clearInterval(countdown);
+      }, 100);
+    })(document);
+</script>
+<script>
+        (function (d) {
+      "use strict";
+      const myElement = d.getElementById("counter2");
+      d.body.classList.add("startBG");
+      var counter = 0;
+      var countdown = setInterval(function () {
+        counter++;
+        myElement.textContent = `+${counter}`;
+        if (counter == 300) clearInterval(countdown);
+      }, 2);
+    })(document);
+</script>
+<script>
+        (function (d) {
+      "use strict";
+      const myElement = d.getElementById("counter3");
+      d.body.classList.add("startBG");
+      var counter = 0;
+      var countdown = setInterval(function () {
+        counter++;
+        myElement.textContent = `+${counter}`;
+        if (counter == 11) clearInterval(countdown);
+      }, 100);
+    })(document);
+</script>

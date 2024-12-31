@@ -1,23 +1,224 @@
 ﻿body {
     background-color: #E9EDF0 !important;
 }
+
 .logo {
     width: 88px;
     height: 87px;
 }
-.navcontainer{
-    background-color:white;
-    font-family: 'Inter Bold';
-    color:#808080;
+
+.navcontainer {
+    background-color: white;
+    font-family: Inter Bold;
+    color: #808080;
 }
+
 a.nav-item.nav-link.active {
     border: 3px solid #08436A;
     border-radius: 22px;
     color: #08436A;
 }
-a:hover {
+
+a.nav-item.nav-link:hover {
     color: #08436A !important;
 }
-.hovercolor:hover{
-    color:white !important;
+
+.nav-item.nav-link.me-0.pe-0:hover {
+    color: white !important;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.shadow-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 40, 40, 0.67);
+    border-radius: 35px;
+}
+
+img.d-block.w-100.sliderimg {
+    border-radius: 35px;
+}
+
+.card {
+    --bs-card-bg: unset;
+    background-color: unset;
+    border: unset;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #08436A;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.top-left {
+    top: 6px;
+    left: 16px;
+}
+
+.top-right {
+    top: 6px;
+    right: 16px;
+}
+
+.bottom-left {
+    bottom: 56px;
+    left: 16px;
+}
+
+.bottom-right {
+    bottom: 56px;
+    right: 16px;
+}
+
+.countdown {
+    background-color: #0F73B3;
+    font-size: 75px;
+    border-radius: 8px;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-caption.d-none-xl.d-md-block {
+    top: 55px;
+    font-size: 62px;
+    font-family: Inter Extra Bold;
+    display: flex !important;
+    justify-content: center;
+}
+
+.carousel-title {
+    color: #EC8C09;
+    text-decoration: underline white 2px;
+    text-underline-offset: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: unset;
+    background: #EEEEEE;
+}
+
+.carousel-control-prev-icon {
+    position: absolute;
+    left: 200px;
+    background-color: #0F73B3;
+    border-radius: 50%;
+}
+
+.carousel-control-next-icon {
+    position: absolute;
+    right: 200px;
+    background-color: #0F73B3;
+    border-radius: 50%;
+}
+
+.upcomingbody {
+    background-color: white;
+    border-radius: 20px !important;
+    height: 460.61px;
+}
+
+.finishedbody {
+    background-color: white;
+    border-radius: 20px !important;
+    height: 420px;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.learnmore {
+    background-color: #E9EDF0 !important;
+    border: none;
+    color: #08436A;
+    font-size: 14px;
+    bottom: 14px;
+    left: 50%;
+}
+
+    .learnmore:hover {
+        opacity: 80%;
+        color: #08436A;
+    }
+
+.startBG:before {
+    animation: bg 5s linear forwards;
+}
+
+@keyframes bg {
+    100% {
+        background-size: 100% 100%;
+    }
+}
+
+.fa.fa-star {
+    color: #7d7d7d;
+}
+
+    .fa.fa-star.checked {
+        color: gold;
+    }
+
+.filter-button {
+    background-color: #08436A;
+    font-family: Inter Regular;
+    border-radius: 15px;
+}
+
+    .filter-button:hover {
+        background-color: #08436A;
+        --bs-btn-hover-bg: none;
+        border: none;
+    }
+
+.custom-pagination {
+    --bs-pagination-hover-bg: none;
+    --bs-pagination-border-color: none;
+    --bs-pagination-bg: none;
+    --bs-pagination-color: #08436A;
+    font-family: Inter Regular;
+    --bs-pagination-active-border-color: white;
+    --bs-pagination-active-bg: white;
+}
+
+.footer {
+    background-color: #08436A;
+    color: white;
+    text-align: start;
+}
+
+.ahref {
+    color: white;
+    text-decoration: none;
+}
+
+    .ahref:hover {
+        color: none !important;
+    }
+
+.vertical-line {
+    width: 1px;
+    height: 100px;
+    background-color: white;
+}
+
+.icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    text-decoration: none;
 }
