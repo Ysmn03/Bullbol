@@ -24,5 +24,9 @@ namespace Bullbol.Controllers
         {
             return View();
         }
+        public IActionResult SingleFinished()
+        {
+            return View();
+        }
     }
 }
