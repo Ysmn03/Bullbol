@@ -53,10 +53,10 @@
                 </form>
                 <ul class="navbar-nav justify-content-end rounded-pill me-3" style="width:14%; box-shadow: 2px 2px 2px 2px #DFDFDF inset;">
                     <li class="nav-item">
-                        <a href="" class="nav-item nav-link ms-2 ps-3 ">Login</a>
+                        <button class="nav-item nav-link ms-2 ps-3 " data-bs-toggle="modal" data-bs-target="#loginmodal">Login</button>
                     </li>
                     <li class="nav-item rounded-pill ps-1 pe-3" style="background-color:#08436A;">
-                        <a href="" class="nav-item nav-link me-0 pe-0 hovercolor" style="color:white;">Register</a>
+                        <button class="nav-item nav-link me-0 pe-0 hovercolor" data-bs-toggle="modal" data-bs-target="#registermodal" style="color:white;">Register</button>
                     </li>
                 </ul>
             </div>
@@ -132,6 +132,193 @@
 
         </div>
     </div>
+
+    <!-- Modal signUp -->
+
+    <div class="modal fade " id="registermodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog sty">
+            <div class="modal-content " style="width: 90%;box-shadow: 2px 2px 2px 2px #DFDFDF inset;">
+                <div class="modal-body">
+                    <div class="row" style="justify-content: center;">
+                        <div class="col-10 d-flex  align-content-center" style="justify-content: center;">
+
+                            <img src="~/img/logo Without Color.png" alt="Logo" style="width: 150px;">
+                        </div>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    </div>
+                    <div class="row">
+                        <div class="textmodal mx-3">Create a new account</div>
+                    </div>
+                    <div class="row " style="justify-content: center;">
+                        <div class="input-container " style="justify-content: center;">
+                            <i class="fa-regular fa-user fa-xl mx-2"></i>
+                            <div class="vertical-line2 mx-2"></div>
+                            <input style="border:none" type="text" class="form-control" placeholder="Enter Your Full Name" aria-label="Full Name" />
+                        </div>
+
+                    </div>
+                    <div class="row pt-3" style="justify-content: center; ">
+                        <div class="input-container " style="justify-content: center;">
+                            <i class="fa-regular fa-envelope fa-xl mx-2"></i>
+                            <div class="vertical-line2 mx-2"></div>
+                            <input style="border:none" type="text" class="form-control" placeholder="example@gmail.com" aria-label="Full Name" />
+                        </div>
+                    </div>
+
+                    <div class="row pt-3" style="justify-content: center; ">
+                        <div class="input-container " style="height:54px">
+                            <div class="textmodal" style="font-size: 17px;font-family: Inter bold;">Role:</div>
+                            <div class="px-4">
+                                <input class="form-check-input" type="radio" name="role" id="studentRole" value="student" />
+                                <label class="textmodal" for="studentRole">Student</label>
+                            </div>
+                            <div class="px-3">
+                                <input class="form-check-input" type="radio" name="role" id="guestRole" value="guest" />
+                                <label class="textmodal" for="guestRole">Guest </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row pt-3 px-3" style="justify-content: center; " id="Student">
+                        <div class="d-flex col-md-6 col-lg-6 col-xl-6">
+                            <div class="input-container " style="justify-content: center;">
+                                <select class="form-select" aria-label="Your College">
+                                    <option selected>Your College</option>
+                                    <option value="1">Science Colleges</option>
+                                    <option value="2">Humanities Colleges</option>
+                                    <option value="3">Health Colleges</option>
+                                    <option value="3">Postgraduate Studies</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-6 d-flex">
+                            <div class="input-container " style="justify-content: center;">
+                                <select class="form-select" aria-label="Your Major">
+                                    <option selected>Your Major</option>
+                                    <option value="1">CS</option>
+                                    <option value="2">CIS</option>
+                                    <option value="3">DS</option>
+                                    <option value="3">AI</option>
+                                    <option value="3">BIT</option>
+                                    <option value="3">CYS</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row pt-3" style="justify-content: center; ">
+                        <div class="input-container " style="justify-content: center;">
+                            <i class="fa-regular fa-lock fa-xl mx-2"></i>
+                            <div class="vertical-line2 mx-2"></div>
+                            <input style="border:none" type="text" class="form-control" placeholder="Password" aria-label="Full Name" />
+                        </div>
+                    </div>
+
+
+                    <div class="row pt-3" style="justify-content: center; ">
+                        <div class="input-container " style="justify-content: center;">
+                            <i class="fa-regular fa-lock fa-xl mx-2"></i>
+                            <div class="vertical-line2 mx-2"></div>
+                            <input style="border:none" type="text" class="form-control" placeholder="Confirm Password" aria-label="Full Name" />
+                        </div>
+                    </div>
+
+
+
+                    <div class="my-3" style="text-align: center;">
+                        <button class="btn btn-lg" style="background-color: #08436A;color:white;width: 50%;">
+                            Sign In
+                        </button>
+                    </div>
+
+
+
+                    <p class="mx-3">
+                        Already have an <button class="border-0" style="color:#EC8C09; background-color:white" data-bs-toggle="modal" data-bs-target="#loginmodal">account?</button>
+                    </p>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ModalLogin -->
+
+    <div class="modal fade" id="loginmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content" style="width: 90%;box-shadow: 2px 2px 2px 2px #DFDFDF inset;">
+                <div class="modal-body">
+                    <div class="row" style="justify-content: center;">
+                        <div class="col-10 d-flex  align-content-center" style="justify-content: center;">
+
+                            <img src="~/img/logo Without Color.png" alt="Logo" style="width: 150px;">
+                        </div>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    </div>
+
+                    <div class="row pt-3" style="justify-content: center; ">
+                        <div class="input-container " style="justify-content: center;">
+                            <i class="fa-regular fa-envelope fa-xl mx-2"></i>
+                            <div class="vertical-line2 mx-2"></div>
+                            <input style="border:none" type="text" class="form-control" placeholder="example@ju.edu.jo" aria-label="Full Name" />
+                        </div>
+                    </div>
+
+
+                    <div class="row pt-3" style="justify-content: center; ">
+                        <div class="input-container " style="justify-content: center;">
+                            <i class="fa-regular fa-lock fa-xl mx-2"></i>
+                            <div class="vertical-line2 mx-2"></div>
+                            <input style="border:none" type="text" class="form-control" placeholder="*****" aria-label="Full Name" />
+                        </div>
+                    </div>
+
+                    <div class="row pt-3 mx-3">
+                        <div class="col-6">
+                            <input class="form-check-input me-2" type="checkbox" id="keepSignedIn">
+                            <label class="form-check-label" for="keepSignedIn">Keep me signed in</label>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="custom-link" style="float: inline-end; color:#EC8C09">Forgot Password?</a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="my-3" style="text-align: center;">
+                        <button class="btn btn-lg" style="background-color: #08436A;color:white;width: 50%;">
+                            Sign In
+                        </button>
+                    </div>
+
+
+
+                    <p class="mx-3">
+                        Not a member Yet? <button class="border-0" style="color:#EC8C09; background-color:white" data-bs-toggle="modal" data-bs-target="#registermodal"> SignUp</button>
+                    </p>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
     <script src="~/js/bootstrap.js"></script>

@@ -428,7 +428,7 @@ li.event.edges:after {
 }
 
 .timeline-2 .event:before {
-    left: -255px;
+    left: -225px;
     content: attr(data-date);
     text-align: right;
     font-size: 1.5em;
@@ -477,3 +477,43 @@ li.event.edges:after {
     font-size: 30px;
     border-radius: 10px;
 }
+
+.textmodal {
+    font-family: Inter Regular;
+    font-size: 14px;
+    color: #063250;
+}
+
+.input-container {
+    border: 1px solid #08436A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    width: 90%;
+    background: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .input-container .form-control::placeholder {
+        color: #808080; /* Placeholder text color */
+    }
+
+
+.vertical-line2 {
+    background-color: #08436A;
+    height: 30px;
+    width: 3px;
+}
+
+
+.form-select {
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+    .form-select:focus {
+        outline: none;
+    }
+
