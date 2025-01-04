@@ -1,1 +1,111 @@
-﻿
+﻿<div class="my-5 align-content-center" style="color:#08436A;font-family:Lora Bold;font-size:60px;width:100%;text-align:center;">
+    Fuel Your Passion For Technology
+</div>
+<div class="container">
+    <div class="row g-4">
+        <!-- Left Section -->
+        <div class="col-md-6">
+            <div class="event-banner">
+                <img class="img-fluid" style="border-radius:10px;border:1px solid black;" src="~/img/singleevent.png" alt="Logo">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <!-- Countdown -->
+            <div class="p-3" style="background-color:white;border-radius:25px;box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.2);">
+                <div class="row" style="text-align:center;">
+                    <div class="col">
+                        <div class="countdown-single-upcoming" id="days">00</div>
+                        <div style="color:#08436A;font-family:Inter Regular;">Days</div>
+                    </div>
+                    <div class="col">
+                        <div class="countdown-single-upcoming" id="hours">00</div>
+                        <div style="color:#08436A;font-family:Inter Regular;">Days</div>
+                    </div>
+                    <div class="col">
+                        <div class="countdown-single-upcoming" id="minutes">00</div>
+                        <div style="color:#08436A;font-family:Inter Regular;">Days</div>
+                    </div>
+                    <div class="col">
+                        <div class="countdown-single-upcoming" id="seconds">00</div>
+                        <div style="color:#08436A;font-family:Inter Regular;">Days</div>
+                    </div>
+                </div>
+                <div class="row mt-3 text-center mx-auto" style="border:2px solid#08436A;border-radius:20px;width:92%;">
+                    <div class="col-7">
+                        <div class="row py-2 lh-1" style="border-right:2px solid#08436A;">
+                            <i class="col-3 px-0 fa-regular fa-calendar fa-xl align-content-center" style="color:#B3B3B3;"></i>
+                            <div class="col-9 px-0" style="color:#08436A;font-family:Inter Regular;text-align:left;">
+                                Thursday,
+                                <br />
+                                November 28, 2024
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 align-content-center">
+                        <div class="row py-2">
+                            <i class="col-3 px-0 fa-regular fa-clock fa-xl align-content-center" style="color:#B3B3B3;"></i>
+                            <div class="col-9 px-0" style="color:#08436A;font-family:Inter Regular;text-align:left;">12:30 - 3:30 PM</div>
+                        </div>
+                    </div>
+                    <div class="col-12" style="border-top:2px solid#08436A;">
+                        <div class="row py-2">
+                            <i class=" col-1 px-0 fa-light fa-location-dot fa-xl align-content-center" style="color:#B3B3B3;"></i>
+                            <div class="col-11 px-0" style="color:#08436A;font-family:Inter Regular;text-align:center;">King Abdullah II School of Information Technology, Al-Louzi Auditorium</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-auto py-3" style="width:50%;">
+                    <button class="btn btn-primary register-btn" style="border:none;color:white; background-color:#08436A;font-family:Inter Bold;font-size:23px;border-radius:10px;">
+                        <div>Register Now</div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Event Details -->
+            <!-- Register Button -->
+            <!-- Hosted By -->
+            <div class="my-5" style="background-color:white;border-radius:25px;box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.2);">
+                <div class="row py-3">
+                    <div class="col-8 m-auto" style="text-align:center;font-family:Inter Bold;font-size:20px">Hosted by: Tech3arabi</div>
+                    <div class="col-4">
+                        <img class="rounded-pill" style="width: 96.88px;height: 96.88px;" src="~/img/company1.png" alt="Host Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+        // Set the date we're counting down to (1 month from now)
+    const countDownDate = new Date().getTime() + (30 * 24 * 60 * 60 * 1000);
+
+    // Update the countdown every 1 second
+    const x = setInterval(function() {
+      // Get today's date and time
+      const now = new Date().getTime();
+
+      // Find the distance between now and the countdown date
+      const distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result
+      document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+      document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+      document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+      document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+
+      // If the countdown is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
+      }
+    }, 1000);
+</script>
