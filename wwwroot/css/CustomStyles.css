@@ -428,7 +428,7 @@ li.event.edges:after {
 }
 
 .timeline-2 .event:before {
-    left: -255px;
+    left: -225px;
     content: attr(data-date);
     text-align: right;
     font-size: 1.5em;
