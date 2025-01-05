@@ -513,7 +513,34 @@ li.event.edges:after {
     box-shadow: none;
 }
 
-    .form-select:focus {
+.form-select:focus {
         outline: none;
+  }
+
+.collapsible {
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .collapsible:hover {
+        background-color: #ddd;
     }
+
+.content {
+    padding: 10px;
+    display: none;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #f9f9f9;
+}
 

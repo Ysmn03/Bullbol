@@ -20,6 +20,10 @@ namespace Bullbol.Controllers
         {
             return View();
         }
+        public IActionResult profile()
+        {
+            return View();
+        }
         public IActionResult SingleUpcoming()
         {
             return View();
@@ -28,5 +32,6 @@ namespace Bullbol.Controllers
         {
             return View();
         }
+
     }
 }
