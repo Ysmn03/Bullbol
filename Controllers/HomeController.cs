@@ -20,7 +20,7 @@ namespace Bullbol.Controllers
         {
             return View();
         }
-        public IActionResult profile()
+        public IActionResult Profile()
         {
             return View();
         }
