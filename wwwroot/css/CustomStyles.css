@@ -31,18 +31,15 @@ a.nav-item.nav-link:hover {
     position: relative;
 }
 
-.shadow-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(40, 40, 40, 0.67);
+.sliderimg {
     border-radius: 35px;
+    background-size: cover;
 }
 
-img.d-block.w-100.sliderimg {
+.sliderimg-overlay {
     border-radius: 35px;
+    background-color: rgba(40, 40, 40, 0.67);
+    height: 90vh;
 }
 
 .card {
@@ -125,13 +122,13 @@ img.d-block.w-100.sliderimg {
 .upcomingbody {
     background-color: white;
     border-radius: 20px !important;
-    height: 460.61px;
+    height: fit-content;
 }
 
 .finishedbody {
     background-color: white;
     border-radius: 20px !important;
-    height: 420px;
+    height: fit-content;
 }
 
 .card-text {
@@ -143,8 +140,7 @@ img.d-block.w-100.sliderimg {
     border: none;
     color: #08436A;
     font-size: 14px;
-    bottom: 14px;
-    left: 50%;
+    margin-top:10px;
 }
 
     .learnmore:hover {
@@ -222,20 +218,23 @@ img.d-block.w-100.sliderimg {
     background-color: white;
     text-decoration: none;
 }
+
 .countdown-single-upcoming {
     color: #08436A;
-    font-family:Inter Bold;
-    font-size:50px;
+    font-family: Inter Bold;
+    font-size: 50px;
 }
+
 .tag-btn {
-    opacity: 100%!important;
+    opacity: 100% !important;
     border: none;
     color: white;
-    background-color: #0F73B3!important;
+    background-color: #0F73B3 !important;
     font-family: Inter Semi Bold;
     font-size: 18px;
     border-radius: 10px;
 }
+
 .timeline-1 {
     border-left: 3px solid #0F73B3;
     border-bottom-right-radius: 4px;
@@ -244,7 +243,7 @@ img.d-block.w-100.sliderimg {
     margin: 0 auto;
     position: relative;
     padding: 37px;
-    padding-top:0;
+    padding-top: 0;
     list-style: none;
     text-align: left;
     max-width: 85%;
@@ -291,7 +290,7 @@ img.d-block.w-100.sliderimg {
     min-width: 120px;
     font-family: Inter Semi Bold;
     color: #08436A;
-    padding-right:20px;
+    padding-right: 20px;
 }
 
 @media (max-width: 767px) {
@@ -312,6 +311,7 @@ img.d-block.w-100.sliderimg {
     content: "";
     /*top: 5px;*/
 }
+
 li.event.edges:after {
     /*-webkit-box-shadow: 0 0 0 3px #b565a7;
     box-shadow: 0 0 0 3px #08436A;*/
@@ -331,23 +331,27 @@ li.event.edges:after {
         left: -31.8px;
     }
 }
+
 .timeline-title {
     font-family: Inter Bold;
     font-size: 27px;
     color: #08436A;
 }
+
 .timeline-body {
     font-family: Inter Bold;
     font-size: 17px;
     color: #808080;
 }
+
 .speaker-body {
     background-color: none;
     outline: 3px dashed #08436A;
     outline-offset: 6px;
-    height: 400px;
-    border-radius:0px;
+    height: fit-content;
+    border-radius: 0px;
 }
+
 .hover-overlay {
     /*transform: translate(-50%, -50%);*/
     opacity: 0;
@@ -355,29 +359,35 @@ li.event.edges:after {
     font-size: 40px;
     color: #08436A; /* Icon color */
     z-index: 2;
-    text-decoration:none;
+    text-decoration: none;
 }
+
 .hover-card:hover .hover-overlay {
     opacity: 1; /* Make the overlay visible on hover */
 }
-.hover-card:hover{
-    opacity:70%;
-    background-color:#B7B0B0;
+
+.hover-card:hover {
+    opacity: 70%;
+    background-color: #B7B0B0;
 }
-.sponsor-img{
-    height:150px;
-    width:152px;
-    border-radius:50%;
-    border:1px solid black;
+
+.sponsor-img {
+    height: 30vh;
+    /*width: 152px;*/
+    border-radius: 50%;
+    border: 1px solid black;
 }
-.single-finished-num{
+
+.single-finished-num {
     color: #08436A;
     font-family: Inter Semi Bold;
     font-size: 50px;
 }
-.finished-img{
-    height:560.37px;
-    width:592.36px;
+
+.finished-img {
+    height: 630px;
+    width: 630px;
+    
 }
 
 .timeline-2 {
@@ -457,6 +467,7 @@ li.event.edges:after {
     content: "";
     /*top: 5px;*/
 }
+
 @media (max-width: 767px) {
     .timeline-2 .event:after {
         left: -31.8px;
@@ -468,6 +479,7 @@ li.event.edges:after {
     font-size: 27px;
     color: #7E7E7E;
 }
+
 .timeline2-btn {
     background-color: #08436A !important;
     opacity: 100% !important;
@@ -513,9 +525,9 @@ li.event.edges:after {
     box-shadow: none;
 }
 
-.form-select:focus {
+    .form-select:focus {
         outline: none;
-  }
+    }
 
 .collapsible {
     background-color: #f1f1f1;
@@ -543,4 +555,3 @@ li.event.edges:after {
     border-top: none;
     background-color: #f9f9f9;
 }
-

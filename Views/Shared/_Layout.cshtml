@@ -16,16 +16,16 @@
     <link href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="navcontainer rounded-pill mx-3 mt-3 border border-2 shadow sticky-top" style="width:98%;">
+    <div class="navcontainer rounded-pill mx-3 mt-3 border border-2 shadow sticky-top" style="width:auto;">
         <nav class="navbar navbar-expand-lg navbar-light " style="height:78px;">
             <div>
                 <a href="/Home/Index" class="navbar-brand nav-item">
                     <img src="~/img/logo Without Color.png" alt="Logo" class="logo mx-2" />
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse d-flex" id="navbarNavDropdown">
                 <ul class="navbar-nav flex-fill">
                     <li class="nav-item">
@@ -41,17 +41,17 @@
                         <a href="/Home/FAQ" class="nav-item nav-link mx-2 px-3 @(Context.Request.Path == "/Home/FAQ" ? "active" : "")">FAQ</a>
                     </li>
                 </ul>
-                <form class="d-flex flex-fill">
-                    <div class="input-group rounded-pill" style="width: 90%;box-shadow: 2px 2px 2px 2px #DFDFDF inset;">
-                        <div class="input-group-text" style="background: none; border: none;width:100%;">
+                <form class="d-flex flex-fill justify-content-end mx-5">
+                    <div class="input-group rounded-pill" style="width: auto;box-shadow: 2px 2px 2px 2px #DFDFDF inset;float:right;">
+                        <div class="input-group-text" style="background: none; border: none;">
                             <i class="fas fa-search" style="color: #808080;"></i>
-                            <div style="border:none;width:100%; font-family:Inter Regular;">
+                            <div style="border:none; font-family:Inter Regular;">
                                 <input class="form-control" style="border:inherit;" type="search" placeholder="Search Event" aria-label="Search">
                             </div>
                         </div>
                     </div>
                 </form>
-                <ul class="navbar-nav justify-content-end rounded-pill me-3" style="width:14%; box-shadow: 2px 2px 2px 2px #DFDFDF inset;">
+                <ul class="navbar-nav justify-content-end rounded-pill me-3" style="width:auto; box-shadow: 2px 2px 2px 2px #DFDFDF inset;">
                     <li class="nav-item">
                         <button class="nav-item nav-link ms-2 ps-3 " data-bs-toggle="modal" data-bs-target="#loginmodal">Login</button>
                     </li>
